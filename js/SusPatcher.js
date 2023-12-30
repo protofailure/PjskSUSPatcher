@@ -1,5 +1,5 @@
 class Patcher extends EventTarget {
-  difficulties = ["easy","normal","hard","expert","master"];
+  difficulties = ["normal","hard","expert","master"];
   db = "https://api.pjsek.ai/database/master";
   asset = {
     pjsekai: "https://assets.pjsek.ai/file/pjsekai-assets",
@@ -483,7 +483,6 @@ class Patcher extends EventTarget {
   saveContent() {
     document.querySelectorAll(`input[type="checkbox"], input[type="radio"], button.select`).forEach(el=>el.disabled=true);
     this.dispatchEvent(new Event("zipstart"));
-    let e = document.getElementById("Easy").checked;
     let n = document.getElementById("Normal").checked;
     let h = document.getElementById("Hard").checked;
     let ex = document.getElementById("Expert").checked;
@@ -500,7 +499,7 @@ class Patcher extends EventTarget {
         tmp.push(new Promise((resolve=>this.vocals[voc].trim.encode(t,resolve)).bind(this)));
       }
     })
-    Promise.all(tmp).then((()=>this.saveZip({easy:e,normal:n,hard:h,expert:ex,master:ma,jacket:c,vocals:v,type:t})).bind(this))
+    Promise.all(tmp).then((()=>this.saveZip({normal:n,hard:h,expert:ex,master:ma,jacket:c,vocals:v,type:t})).bind(this))
   }
   
   saveZip(options) {
