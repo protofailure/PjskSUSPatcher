@@ -16,11 +16,10 @@ class Patcher extends EventTarget {
   };
   vocals = {};
   charts = {
-    easy: {playlevel:0,difficulty:0,sus:"",url:""},
-    normal: {playlevel:0,difficulty:1,sus:"",url:""},
-    hard: {playlevel:0,difficulty:2,sus:"",url:""},
-    expert: {playlevel:0,difficulty:3,sus:"",url:""},
-    master: {playlevel:0,difficulty:4,sus:"",url:""},
+    normal: {playlevel:0,difficulty:0,sus:"",url:""},
+    hard: {playlevel:0,difficulty:1,sus:"",url:""},
+    expert: {playlevel:0,difficulty:2,sus:"",url:""},
+    master: {playlevel:0,difficulty:3,sus:"",url:""},
     append: {playlevel:0,difficulty:4,sus:"",url:""},
   };
   char = {
