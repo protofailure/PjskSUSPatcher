@@ -1,5 +1,5 @@
 # PjskSUSPatcher
-Custom fork of PjskSUSPatcher, but with the difficulties bumped down so Pjsk MASTER will map to SUS MASTER.
+PjskSUSPatcher, but with the difficulties bumped down so Proseka MASTER will map to SUS MASTER.
 
 # ORIGINAL README
 
